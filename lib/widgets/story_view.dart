@@ -82,17 +82,20 @@ class StoryItem {
           vertical: 16,
         ),
         child: Center(
-          child: Text(
-            title,
-            style: textStyle?.copyWith(
-                  color: contrast > 1.8 ? Colors.white : Colors.black,
-                ) ??
-                TextStyle(
-                  color: contrast > 1.8 ? Colors.white : Colors.black,
-                  fontSize: 18,
-                ),
-            textAlign: TextAlign.center,
-          ),
+          child: Column(children: [
+            Text(
+              title,
+              style: textStyle?.copyWith(
+                    color: contrast > 1.8 ? Colors.white : Colors.black,
+                  ) ??
+                  TextStyle(
+                    color: contrast > 1.8 ? Colors.white : Colors.black,
+                    fontSize: 18,
+                  ),
+              textAlign: TextAlign.center,
+            ),
+            Text("jh",style: TextStyle(color:Colors.white),)
+          ]),
         ),
         //color: backgroundColor,
       ),
