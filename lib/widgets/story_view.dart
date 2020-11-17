@@ -82,7 +82,7 @@ class StoryItem {
           vertical: 16,
         ),
         child: Center(
-          child: Column(children: [
+          child: 
             Text(
               title,
               style: textStyle?.copyWith(
@@ -93,9 +93,7 @@ class StoryItem {
                     fontSize: 18,
                   ),
               textAlign: TextAlign.center,
-            ),
-            Text("jh",style: TextStyle(color:Colors.white),)
-          ]),
+            ), 
         ),
         //color: backgroundColor,
       ),
