@@ -51,6 +51,7 @@ class StoryItem {
   /// what inline/full-page means.
   static StoryItem text({
     @required String title,
+    @required String title2,
     @required Color backgroundColor,
     TextStyle textStyle,
     bool shown = false,
@@ -82,18 +83,17 @@ class StoryItem {
           vertical: 16,
         ),
         child: Center(
-          child: 
-            Text(
-              title,
-              style: textStyle?.copyWith(
-                    color: contrast > 1.8 ? Colors.white : Colors.black,
-                  ) ??
-                  TextStyle(
-                    color: contrast > 1.8 ? Colors.white : Colors.black,
-                    fontSize: 18,
-                  ),
-              textAlign: TextAlign.center,
-            ), 
+          child: Text(
+            title + title2,
+            style: textStyle?.copyWith(
+                  color: contrast > 1.8 ? Colors.white : Colors.black,
+                ) ??
+                TextStyle(
+                  color: contrast > 1.8 ? Colors.white : Colors.black,
+                  fontSize: 18,
+                ),
+            textAlign: TextAlign.center,
+          ),
         ),
         //color: backgroundColor,
       ),
